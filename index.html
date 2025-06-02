@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Invitación 60 años</title>
+  <title>Detalles de la Invitación</title>
   <style>
     body {
       margin: 0;
@@ -12,7 +12,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
+      padding: 20px;
     }
 
     img {
@@ -22,8 +22,14 @@
       box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
     }
 
-    .btn {
+    .button-container {
       margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .btn {
       padding: 14px 28px;
       font-size: 18px;
       background-color: #d4af37;
@@ -31,6 +37,7 @@
       text-decoration: none;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
       transition: background-color 0.3s ease;
     }
 
@@ -40,7 +47,15 @@
   </style>
 </head>
 <body>
-  <img src="tarjeta-invitacion.png" alt="Invitación">
-  <a class="btn" href="informacion-invitacion.png" target="_blank">Abrir invitación</a>
+  <img src="informacion-invitacion.png" alt="Información del evento">
+
+  <div class="button-container">
+    <a class="btn" href="https://wa.me/593999999999?text=Hola%2C%20confirmo%20mi%20asistencia%20al%20evento%20de%20María%20Arevalo%20Dumes" target="_blank">
+      Confirma tu asistencia aquí
+    </a>
+    <a class="btn" href="https://www.google.com/maps/place/Club+Social+Aerotécnicos+FAE/" target="_blank">
+      Ver Ubicación
+    </a>
+  </div>
 </body>
 </html>

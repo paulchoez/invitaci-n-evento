@@ -23,20 +23,25 @@
     }
     .boton {
       position: absolute;
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
       width: 45%;
       height: 7%;
       z-index: 2;
-    }
-    .btn-whatsapp {
-      top: 81.5%; /* Posición inferior */
-      left: 28%;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      background-color: rgba(0, 123, 255, 0.8); /* Azul semitransparente */
+      cursor: pointer;
     }
     .btn-mapa {
-      top: 73%; /* Posición superior */
+      top: 73%;
       left: 28%;
+    }
+    .btn-whatsapp {
+      top: 81.5%;
+      left: 28%;
+      background-color: rgba(40, 201, 75, 0.85); /* Verde WhatsApp */
     }
   </style>
 </head>
@@ -44,14 +49,14 @@
   <div class="container">
     <img src="informacion-invitacion.png" alt="Invitación" class="invitacion">
 
-    <!-- Botón Mapa (posición superior) -->
+    <!-- Botón Mapa -->
     <a href="https://maps.app.goo.gl/HEARHYPpcUtbrtk98" target="_blank">
-      <button class="boton btn-mapa" aria-label="Ver mapa de ubicación"></button>
+      <button class="boton btn-mapa">Ver Mapa</button>
     </a>
 
-    <!-- Botón WhatsApp (posición inferior) -->
+    <!-- Botón WhatsApp -->
     <a href="https://wa.me/593987527141?text=Confirmo%20mi%20asistencia%20al%20evento%20de%20los%2060%20años%20de%20María" target="_blank">
-      <button class="boton btn-whatsapp" aria-label="Confirmar asistencia por WhatsApp"></button>
+      <button class="boton btn-whatsapp">Confirma tu asistencia aquí</button>
     </a>
   </div>
 </body>

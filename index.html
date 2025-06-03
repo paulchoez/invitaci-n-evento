@@ -2,59 +2,56 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Detalles de la Invitación</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación</title>
   <style>
     body {
       margin: 0;
-      background-color: #0d2c1e;
-      font-family: 'Arial', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
+      padding: 0;
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
     }
-
-    img {
-      max-width: 90%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
     }
-
-    .button-container {
-      margin-top: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+    .invitacion {
+      width: 100%;
+      display: block;
     }
-
-    .btn {
-      padding: 14px 28px;
-      font-size: 18px;
-      background-color: #d4af37;
-      color: #000;
-      text-decoration: none;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      text-align: center;
-      transition: background-color 0.3s ease;
+    .boton {
+      position: absolute;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      width: 45%;
+      height: 7%;
+      z-index: 2;
     }
-
-    .btn:hover {
-      background-color: #b8912e;
+    .btn-whatsapp {
+      top: 73%; /* ajusta verticalmente */
+      left: 28%; /* ajusta horizontalmente */
+    }
+    .btn-mapa {
+      top: 81.5%; /* ajusta verticalmente */
+      left: 28%; /* ajusta horizontalmente */
     }
   </style>
 </head>
 <body>
-  <img src="informacion-invitacion.png" alt="Información del evento">
+  <div class="container">
+    <img src="tarjeta-invitacion.png" alt="Invitación" class="invitacion">
 
-  <div class="button-container">
-    <a class="btn" href="https://wa.me/593999999999?text=Hola%2C%20confirmo%20mi%20asistencia%20al%20evento%20de%20María%20Arevalo%20Dumes" target="_blank">
-      Confirma tu asistencia aquí
+    <!-- Botón WhatsApp -->
+    <a href="https://wa.me/593XXXXXXXXX?text=Confirmo%20mi%20asistencia%20al%20evento" target="_blank">
+      <button class="boton btn-whatsapp" aria-label="Confirmar asistencia por WhatsApp"></button>
     </a>
-    <a class="btn" href="https://www.google.com/maps/place/Club+Social+Aerotécnicos+FAE/" target="_blank">
-      Ver Ubicación
+
+    <!-- Botón Mapa -->
+    <a href="https://maps.app.goo.gl/xxxxxxxxxxxx" target="_blank">
+      <button class="boton btn-mapa" aria-label="Ver mapa de ubicación"></button>
     </a>
   </div>
 </body>
